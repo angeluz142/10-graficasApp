@@ -1,1 +1,18 @@
-<p>barras-doble works!</p>
+<h1>Gráficas Dobles</h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-6">
+      <app-grafica-barra
+      [horizontal]="true"
+        [labels]="proveedoresLabels"
+        [dataset]="productoData"
+      ></app-grafica-barra>
+    </div>
+    <div class="col-md-6">
+      <app-grafica-barra
+      [labels]="proveedoresLabels"
+      [dataset]="proveedoresData"
+      ></app-grafica-barra>
+    </div>
+</div>
